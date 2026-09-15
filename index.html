@@ -4,13 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jocelyn Deleuil | Robotics Software Engineer</title>
-  <meta name="description" content="Jocelyn Deleuil is a Robotics Software Engineer at Enchanted Tools working on human-aware navigation, perception, autonomous robots, embodied AI, and ROS 2 systems.">
+  <meta name="description" content="Jocelyn Deleuil is a Robotics Software Engineer and ENSTA student focused on autonomous robots, social navigation, embedded systems, and ROS 2.">
   <link rel="canonical" href="https://www.jocelyn-deleuil.com/">
   <link rel="icon" type="image/png" href="/favicon.png">
 
   <meta property="og:type" content="profile">
   <meta property="og:title" content="Jocelyn Deleuil | Robotics Software Engineer">
-  <meta property="og:description" content="Robotics Software Engineer working on human-aware navigation, perception, autonomous robots, embodied AI, and ROS 2 systems.">
+  <meta property="og:description" content="Robotics Software Engineer focused on autonomous robots, social navigation, embedded systems, and ROS 2.">
   <meta property="og:url" content="https://www.jocelyn-deleuil.com/">
   <meta property="og:image" content="https://www.jocelyn-deleuil.com/assets/img/jocelyn-profile.jpg">
   <meta property="og:image:alt" content="Portrait of Jocelyn Deleuil">
@@ -18,7 +18,7 @@
   <meta property="profile:last_name" content="Deleuil">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Jocelyn Deleuil | Robotics Software Engineer">
-  <meta name="twitter:description" content="Robotics Software Engineer working on human-aware navigation, perception, autonomous robots, embodied AI, and ROS 2 systems.">
+  <meta name="twitter:description" content="Robotics Software Engineer focused on autonomous robots, social navigation, embedded systems, and ROS 2.">
   <meta name="twitter:image" content="https://www.jocelyn-deleuil.com/assets/img/jocelyn-profile.jpg">
 
   <script type="application/ld+json">
@@ -55,7 +55,7 @@
       <a class="name" href="#top">Jocelyn Deleuil</a>
       <nav aria-label="Primary navigation">
         <a href="#about">About</a>
-        <a href="#enchanted">Enchanted</a>
+        <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#open-source">Open Source</a>
         <a href="#stack">Stack</a>
@@ -85,44 +85,40 @@
     <section id="about">
       <h2>About</h2>
       <p class="lead">
-        I build autonomous robots that have to work reliably around people, not only in simulation. At Enchanted Tools in Paris, I work in Navigation R&amp;D on Mirokaï robots, across human-aware perception, navigation, multi-robot integration, and validation on physical hardware. My day-to-day work is mainly C++, Python, ROS 2, Nav2, Linux, and NVIDIA Jetson platforms.
+        I build autonomous robots and robotics software with a focus on navigation, embedded systems, and real-world integration. I am a Robotics Software Engineer at Enchanted Tools in Paris, working on Mirokaï robots, and I am completing an MSc in Embedded Systems Engineering at ENSTA - Institut Polytechnique de Paris.
       </p>
       <p>
-        Alongside my work, I am completing an MSc in Embedded Systems Engineering at ENSTA - Institut Polytechnique de Paris. I use personal and team projects to explore vision-language models for social navigation, humanoid robotics, embedded systems, and autonomous competition robots.
+        My personal and team projects explore vision-language models for social navigation, humanoid robotics, embedded systems, and autonomous competition robots.
       </p>
     </section>
 
-    <section id="enchanted">
-      <h2>Engineering at Enchanted Tools</h2>
-      <p class="section-intro">
-        My work focuses on the navigation stack used by Mirokaï robots, with an emphasis on behavior that remains robust when perception, people, hardware, and deployment constraints meet in the real world.
-      </p>
+    <section id="experience">
+      <h2>Experience</h2>
 
       <article class="item">
-        <h3>Human-aware perception and social navigation</h3>
+        <div class="item-head">
+          <div>
+            <h3>Robotics Software Engineer</h3>
+            <p class="sub">Enchanted Tools · Paris, France</p>
+          </div>
+          <span class="date">Sep 2024 - Present</span>
+        </div>
         <p>
-          Integrated a complete social-navigation chain combining 3D person perception, body-orientation estimation, social-formation tracking, and a Nav2 local-costmap layer for personal space, group formations, and motion-aware proxemic costs. The work spans C++ perception and navigation components, TF integration, cost modeling, automated tests, simulation, and robot validation.
+          Develop and integrate robotics software for Mirokaï, with a focus on autonomous navigation, system integration, and validation on physical robots.
         </p>
-      </article>
-
-      <article class="item">
-        <h3>360-degree near-field obstacle perception</h3>
-        <p>
-          Reworked the near-field perception pipeline around nine time-of-flight sensors and an RGB-D camera, including synchronization, filtering, hysteresis, obstacle enrichment, depth processing, and sensor fusion. The resulting obstacle representation feeds local costmaps and collision monitoring for robust navigation close to the robot.
-        </p>
-      </article>
-
-      <article class="item">
-        <h3>Multi-robot fleet orchestration</h3>
-        <p>
-          Built Open-RMF support that bridges fleet-level missions with the onboard navigation stack, then validated end-to-end orchestration and navigation across multiple physical Mirokaï robots in indoor environments.
-        </p>
+        <p class="meta">ROS 2 · C++ · Python · Linux</p>
       </article>
 
       <article class="item compact">
-        <h3>From integration to Navigation R&amp;D</h3>
+        <div class="item-head">
+          <div>
+            <h3>Test and Integration Technician Intern</h3>
+            <p class="sub">Enchanted Tools · Paris, France</p>
+          </div>
+          <span class="date">Apr 2024 - Jul 2024</span>
+        </div>
         <p>
-          I first joined Enchanted Tools in 2024 as a Test and Integration Technician Intern, where I designed and iterated a 3D-printed charging interface for autonomous docking and characterized robotic hands through endurance, precision, motion-capture, and field tests.
+          Supported prototyping, testing, and integration for Mirokaï robots across hardware and software interfaces.
         </p>
       </article>
     </section>
@@ -239,7 +235,6 @@
         <p>
           Contributed upstream to the lightweight PaxoPhone operating system, including a merged message-management module and fixes to storage and translation unit tests.
         </p>
-        <p class="item-links"><a href="https://github.com/paxo-phone/PaxOS-9/pull/80">Merged contribution #80</a> · <a href="https://github.com/paxo-phone/PaxOS-9/pull/79">Merged contribution #79</a></p>
       </article>
     </section>
 
@@ -252,11 +247,11 @@
         </div>
         <div class="stack-group">
           <h3>Robotics</h3>
-          <p>ROS / ROS 2, Nav2, MPPI, ros2_control, Open-RMF, Isaac ROS, Gazebo, TF2</p>
+          <p>ROS / ROS 2, Nav2, MPPI, ros2_control, Gazebo, TF2</p>
         </div>
         <div class="stack-group">
           <h3>Perception &amp; AI</h3>
-          <p>PyTorch, vLLM, Nvblox, OpenCV, TensorRT, YOLO, vision-language models</p>
+          <p>PyTorch, vLLM, OpenCV, TensorRT, YOLO, vision-language models</p>
         </div>
         <div class="stack-group">
           <h3>Systems &amp; Embedded</h3>
