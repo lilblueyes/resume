@@ -1,278 +1,310 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Resume of Jocelyn Deleuil, Robotics Software Engineer focused on robot navigation and autonomous systems." />
-  <meta name="theme-color" content="#ffffff" />
-  <title>Jocelyn Deleuil | Robotics Software Engineer</title>
-  <style>
-    :root {
-      --ink: #172033;
-      --muted: #566174;
-      --accent: #15558a;
-      --rule: #bfd0df;
-      --paper: #ffffff;
-      --bg: #edf1f5;
-    }
-
-    * { box-sizing: border-box; }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      margin: 0;
-      color: var(--ink);
-      background: var(--bg);
-      font-family: Georgia, "Times New Roman", serif;
-      line-height: 1.28;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    .toolbar {
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      padding: 12px 16px;
-      background: rgba(237, 241, 245, 0.94);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid #d9e0e7;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    }
-
-    .toolbar a,
-    .toolbar button {
-      appearance: none;
-      border: 1px solid #c5ced8;
-      border-radius: 8px;
-      background: #fff;
-      color: #243244;
-      padding: 8px 12px;
-      font: inherit;
-      font-size: 13px;
-      font-weight: 650;
-      text-decoration: none;
-      cursor: pointer;
-    }
-
-    .toolbar a:hover,
-    .toolbar button:hover { border-color: #8394a6; }
-
-    main {
-      width: min(210mm, calc(100% - 32px));
-      min-height: 297mm;
-      margin: 26px auto 40px;
-      padding: 14mm 15mm 13mm;
-      background: var(--paper);
-      box-shadow: 0 18px 50px rgba(36, 50, 68, 0.14);
-    }
-
-    header { text-align: center; }
-
-    h1 {
-      margin: 0;
-      color: var(--accent);
-      font-size: 25px;
-      line-height: 1.05;
-    }
-
-    .headline {
-      margin: 3px 0 4px;
-      font-size: 13.4px;
-      font-weight: 700;
-    }
-
-    .contact,
-    .links {
-      margin: 0;
-      font-size: 10.8px;
-      color: #253247;
-    }
-
-    .links { margin-top: 1px; }
-
-    a { color: inherit; }
-
-    section { margin-top: 8px; }
-
-    h2 {
-      margin: 0 0 4px;
-      padding-bottom: 2px;
-      color: var(--accent);
-      border-bottom: 1px solid var(--accent);
-      font-size: 15.5px;
-      line-height: 1.1;
-    }
-
-    .entry { margin-top: 4px; }
-
-    .row {
-      display: flex;
-      align-items: baseline;
-      justify-content: space-between;
-      gap: 16px;
-    }
-
-    .row strong { font-size: 11.5px; }
-
-    .date {
-      flex: 0 0 auto;
-      color: var(--accent);
-      font-size: 10.6px;
-      font-weight: 700;
-      white-space: nowrap;
-    }
-
-    .subrow {
-      display: flex;
-      align-items: baseline;
-      justify-content: space-between;
-      gap: 16px;
-      margin-top: 1px;
-      font-size: 10.5px;
-    }
-
-    .subrow em { color: #303c4d; }
-    .place { white-space: nowrap; }
-
-    ul {
-      margin: 2px 0 0;
-      padding-left: 16px;
-    }
-
-    li {
-      margin: 0.7px 0;
-      font-size: 10.4px;
-    }
-
-    .skills p,
-    .extra p {
-      margin: 1.4px 0;
-      font-size: 10.35px;
-    }
-
-    .skills strong,
-    .extra strong { font-weight: 700; }
-
-    @media (max-width: 680px) {
-      .toolbar { flex-wrap: wrap; }
-      main {
-        width: 100%;
-        min-height: 0;
-        margin: 0;
-        padding: 24px 18px 36px;
-        box-shadow: none;
-      }
-      .row,
-      .subrow { gap: 8px; }
-      .row strong { max-width: 70%; }
-      .date, .place { font-size: 9.8px; }
-    }
-
-    @media print {
-      @page { size: A4; margin: 0; }
-      body { background: #fff; }
-      .toolbar { display: none !important; }
-      main {
-        width: 210mm;
-        min-height: 297mm;
-        margin: 0;
-        padding: 12mm 14mm;
-        box-shadow: none;
-      }
-      a { text-decoration: none; }
-    }
-  </style>
-</head>
-<body>
-  <nav class="toolbar" aria-label="Resume actions">
-    <button type="button" onclick="window.print()">Print / Save PDF</button>
-    <a href="https://www.linkedin.com/in/jocelyn-deleuil/" target="_blank" rel="noreferrer">LinkedIn</a>
-    <a href="https://github.com/lilblueyes" target="_blank" rel="noreferrer">GitHub</a>
-    <a href="mailto:jocelyn.deleuil@ensta.fr">Email</a>
-  </nav>
-
-  <main>
-    <header>
-      <h1>Jocelyn Deleuil</h1>
-      <p class="headline">Robotics Software Engineer | Robot Navigation | Autonomous Systems</p>
-      <p class="contact">Paris, France | +33 6 73 91 29 05 | <a href="mailto:jocelyn.deleuil@ensta.fr">jocelyn.deleuil@ensta.fr</a></p>
-      <p class="links"><a href="https://www.linkedin.com/in/jocelyn-deleuil/">linkedin.com/in/jocelyn-deleuil</a> | <a href="https://github.com/lilblueyes">github.com/lilblueyes</a> | <a href="https://www.jocelyn-deleuil.com/">jocelyn-deleuil.com</a></p>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jocelyn Deleuil | Robotics Software Engineer</title>
+    <meta name="description" content="Portfolio of Jocelyn Deleuil, Robotics Software Engineer focused on social navigation, autonomous robots, and embodied AI." />
+    <meta name="theme-color" content="#0b1020" />
+    <meta property="og:title" content="Jocelyn Deleuil | Robotics Software Engineer" />
+    <meta property="og:description" content="Social navigation, autonomous robots, ROS 2, embodied AI, and real robotic systems." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="#top">JD</a>
+        <nav class="nav">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#resume">Resume</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
     </header>
 
-    <section>
-      <h2>Education</h2>
-      <div class="entry">
-        <div class="row"><strong>ENSTA - Institut Polytechnique de Paris</strong><span class="date">Sep 2024 - Sep 2027 (Expected)</span></div>
-        <div class="subrow"><em>Master's-level Engineering Degree in Embedded Systems, Apprenticeship Program</em><span class="place">Brest, France</span></div>
-        <ul><li>Relevant coursework: Kalman filtering; image processing; machine learning; C/C++ and Python; operating systems and concurrency; high-performance embedded computing; FPGA/SoC; RF/wireless systems.</li></ul>
-      </div>
-      <div class="entry">
-        <div class="row"><strong>University of Toulon - Institute of Technology</strong><span class="date">Sep 2022 - Jul 2024</span></div>
-        <div class="subrow"><em>University Diploma of Technology in Electrical Engineering and Industrial Computing, 120 ECTS</em><span class="place">Toulon, France</span></div>
-        <ul><li>Embedded Systems track: electronics, embedded C, microcontrollers, sensors, PCB design, power electronics, and robotics.</li></ul>
-      </div>
-    </section>
+    <main id="top">
+      <section class="hero container">
+        <div class="hero-copy">
+          <p class="eyebrow">Robotics Software Engineer</p>
+          <h1>Building autonomous robots that move intelligently around people.</h1>
+          <p class="lead">
+            I'm <strong>Jocelyn Deleuil</strong>, a French robotics engineer focused on
+            <strong>social navigation</strong>, <strong>ROS 2 autonomy</strong>, and
+            <strong>real robot integration</strong>. I build systems that go beyond demos and run on actual robots.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">See selected work</a>
+            <a class="button button-secondary" href="#resume">View resume</a>
+          </div>
+          <ul class="hero-meta">
+            <li><span>Base</span> Paris, France</li>
+            <li><span>Current focus</span> Social robot navigation, VLM-guided autonomy, ROS 2 systems</li>
+            <li><span>Research interests</span> Social navigation, embodied AI, robot autonomy</li>
+          </ul>
+        </div>
+        <aside class="hero-panel card">
+          <div class="status-chip">Currently at Enchanted Tools</div>
+          <h2>What I’m working on</h2>
+          <ul class="focus-list">
+            <li>Deploying social navigation on Mirokaï robots</li>
+            <li>Exploring VLMs for scene-aware and human-aware navigation</li>
+            <li>Co-leading PHARE, a humanoid experimentation platform</li>
+          </ul>
+          <div class="hero-stats">
+            <div>
+              <strong>17th / 89</strong>
+              <span>French Robotics Cup 2026</span>
+            </div>
+            <div>
+              <strong>World runner-up</strong>
+              <span>RoboCup MSL 2026</span>
+            </div>
+            <div>
+              <strong>President</strong>
+              <span>ENSTA Robotics Club</span>
+            </div>
+          </div>
+        </aside>
+      </section>
 
-    <section>
-      <h2>Professional Experience</h2>
-      <div class="entry">
-        <div class="row"><strong>Junior Robotics Software Engineer (Apprentice)</strong><span class="date">Sep 2024 - Present</span></div>
-        <div class="subrow"><em>Enchanted Tools - Navigation R&amp;D</em><span class="place">Paris, France</span></div>
-        <ul>
-          <li>Led the integration and deployment of social navigation on Mirokaï robots, extending their ROS 2 navigation architecture to perceive people and groups while planning socially compliant trajectories in human-populated environments.</li>
-          <li>Integrated nine synchronized ToF sensors with depth-camera obstacle processing and fusion, feeding Nav2 costmaps and collision monitoring for 360-degree near-field obstacle avoidance.</li>
-          <li>Built and deployed Open-RMF fleet management on Mirokaï, integrating Nav2 via a custom adapter to execute coordinated multi-robot missions.</li>
-        </ul>
-      </div>
-      <div class="entry">
-        <div class="row"><strong>Test and Integration Technician Intern</strong><span class="date">Apr 2024 - Jul 2024</span></div>
-        <div class="subrow"><em>Enchanted Tools - V&amp;V</em><span class="place">Paris, France</span></div>
-        <ul><li>Designed and prototyped a magnetic coupling mechanism for autonomous Mirokaï charging.</li></ul>
-      </div>
-    </section>
+      <section class="container highlights" id="about">
+        <article class="card highlight-card">
+          <p class="highlight-label">Social Navigation</p>
+          <h3>Human-aware autonomy on real robots</h3>
+          <p>
+            Built a complete social navigation stack with 3D human perception, body orientation,
+            social formation tracking, and motion-aware proxemic cost modeling.
+          </p>
+        </article>
+        <article class="card highlight-card">
+          <p class="highlight-label">Systems Integration</p>
+          <h3>From sensors to robust onboard autonomy</h3>
+          <p>
+            Integrated RGB-D + nine ToF sensors, local costmaps, collision monitoring,
+            and Open-RMF orchestration across multiple physical robots.
+          </p>
+        </article>
+        <article class="card highlight-card">
+          <p class="highlight-label">Embodied AI</p>
+          <h3>VLMs applied to navigation</h3>
+          <p>
+            Building VLM2Nav, a ROS 2 and Gazebo testbed using Qwen3-VL and vLLM on Jetson AGX Orin
+            for structured social decision-making.
+          </p>
+        </article>
+      </section>
 
-    <section>
-      <h2>Selected Robotics Projects</h2>
-      <div class="entry">
-        <div class="row"><strong>VLM-Guided Human-Aware Navigation - Personal Project</strong><span class="date">2026 - Present</span></div>
-        <ul><li>Building a ROS 2 VLM prototype for human-intent reasoning and structured semantic inputs to Nav2.</li></ul>
-      </div>
-      <div class="entry">
-        <div class="row"><strong>PHARE - Autonomous Humanoid Research and Experimentation Platform</strong><span class="date">2026 - Present</span></div>
-        <div class="subrow"><em>Co-Founder | Software &amp; Embedded Systems Lead</em><span class="place">Brest, France</span></div>
-        <ul><li>Co-lead development of a modular wheeled-biped humanoid, leading ROS 2 software, embedded firmware and electronics, and CAN architecture for state estimation, optimal control, and reinforcement learning.</li></ul>
-      </div>
-      <div class="entry">
-        <div class="row"><strong>RoboCup Middle Size League World Championship - Robot Club Toulon</strong><span class="date">2022 - Present</span></div>
-        <div class="subrow"><em>Robotics Software Developer | Goalkeeper Robot Lead (2026)</em><span class="place">Incheon, South Korea</span></div>
-        <ul><li>Developed autonomous goalkeeper behaviors in C#, combining stereo-camera 3D ball reconstruction, ballistic trajectory prediction, reactive positioning, and a 2-axis shot-blocking arm; world runner-up at RoboCup 2026.</li></ul>
-      </div>
-      <div class="entry">
-        <div class="row"><strong>French Robotics Cup - FIPATECH</strong><span class="date">2024 - 2026</span></div>
-        <div class="subrow"><em>Founder | Team Leader and Software Lead</em><span class="place">Brest, France</span></div>
-        <ul><li>Led the team to 17th out of 89 at the 2026 French Robotics Cup while developing the ROS 2 autonomy stack, including multi-sensor localization, Nav2 with MPPI, online planning, and distributed actuation.</li></ul>
-      </div>
-    </section>
+      <section class="container section" id="experience">
+        <div class="section-heading">
+          <p class="eyebrow">Experience</p>
+          <h2>Shipping navigation and autonomy on real robotic systems</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item card">
+            <div class="timeline-head">
+              <div>
+                <h3>Robotics Software Engineer</h3>
+                <p>Enchanted Tools, Navigation R&amp;D</p>
+              </div>
+              <span>Sep 2024 to Present</span>
+            </div>
+            <ul>
+              <li>Led integration of a complete social navigation stack on Mirokaï robots, combining 3D human perception, body-orientation estimation, social formation tracking, and proxemic cost modeling.</li>
+              <li>Developed a 360-degree perception pipeline fusing nine ToF sensors with an RGB-D camera for robust near-field navigation.</li>
+              <li>Built and validated end-to-end fleet orchestration across multiple physical Mirokaï robots using Open-RMF.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
 
-    <section class="skills">
-      <h2>Technical Skills</h2>
-      <p><strong>Programming and Tools:</strong> C++, Python, C, MATLAB/Simulink, Bash, Git, CMake</p>
-      <p><strong>Robotics:</strong> ROS 2, Nav2, MPPI, ros2_control, Open-RMF, nvblox, Gazebo, localization, planning, control, sensor fusion</p>
-      <p><strong>Perception/ML:</strong> Human detection &amp; orientation estimation, TensorRT, YOLO, Part-HOE, OpenCV, PyTorch, point clouds</p>
-      <p><strong>Systems and Embedded Computing:</strong> Linux, Docker, NVIDIA Jetson, STM32/ESP32, FreeRTOS, micro-ROS, CAN</p>
-    </section>
+      <section class="container section" id="projects">
+        <div class="section-heading">
+          <p class="eyebrow">Selected Projects</p>
+          <h2>Projects that reflect how I build</h2>
+        </div>
+        <div class="projects-grid">
+          <article class="card project-card project-featured">
+            <div class="project-tag">VLM + Navigation</div>
+            <h3>VLM2Nav</h3>
+            <p>
+              A ROS 2 and Gazebo social-navigation testbed using Qwen3-VL via vLLM on Jetson AGX Orin.
+              It turns temporal RGB observations into structured social decisions executed through Nav2 and MPPI.
+            </p>
+            <ul>
+              <li>HuNavSim reactive pedestrians</li>
+              <li>Semantic trajectory critic</li>
+              <li>Nine-scenario reproducible benchmark suite</li>
+            </ul>
+          </article>
+          <article class="card project-card">
+            <div class="project-tag">Humanoid Platform</div>
+            <h3>PHARE</h3>
+            <p>
+              Co-founded and co-lead a modular wheeled-biped humanoid platform for research and experimentation,
+              with responsibility for ROS 2 software, embedded firmware, electronics, and CAN architecture.
+            </p>
+          </article>
+          <article class="card project-card">
+            <div class="project-tag">Competition Robotics</div>
+            <h3>RoboCup MSL Goalkeeper</h3>
+            <p>
+              Developed goalkeeper autonomy in C#, combining stereo vision, ballistic trajectory prediction,
+              reactive positioning, and shot interception with a 2-axis arm.
+            </p>
+          </article>
+          <article class="card project-card">
+            <div class="project-tag">Autonomous Holonomic Robot</div>
+            <h3>FIPATECH</h3>
+            <p>
+              Built the ROS 2 competition stack for a French Robotics Cup robot with Nav2, MPPI,
+              multi-sensor localization, and online task planning from simulation to field execution.
+            </p>
+          </article>
+        </div>
+      </section>
 
-    <section class="extra">
-      <h2>Additional Information</h2>
-      <p><strong>Technical Publication:</strong> Co-author, RoboCup MSL Team Description Paper (2026)</p>
-      <p><strong>Open Source:</strong> Maintainer, Awesome French Robotics; C++ Contributor, PaxOS</p>
-      <p><strong>Leadership:</strong> President, ENSTA Robotics Club</p>
-      <p><strong>English:</strong> TOEIC 860/990</p>
-    </section>
-  </main>
-</body>
+      <section class="container section" id="skills">
+        <div class="section-heading">
+          <p class="eyebrow">Technical Skills</p>
+          <h2>A software and systems profile centered on autonomy</h2>
+        </div>
+        <div class="skills-grid">
+          <article class="card skill-card">
+            <h3>Programming</h3>
+            <p>C++, Python, C, C#, MATLAB/Simulink, Bash</p>
+          </article>
+          <article class="card skill-card">
+            <h3>Robotics</h3>
+            <p>ROS, ROS 2, Nav2, MPPI, ros2_control, Open-RMF, Isaac ROS, Gazebo, TF2</p>
+          </article>
+          <article class="card skill-card">
+            <h3>Perception &amp; ML</h3>
+            <p>PyTorch, vLLM, Nvblox, OpenCV, TensorRT, YOLO</p>
+          </article>
+          <article class="card skill-card">
+            <h3>Systems &amp; Embedded</h3>
+            <p>Linux, Docker, NVIDIA Jetson, STM32, FreeRTOS, micro-ROS, CAN</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="container section two-col">
+        <article class="card">
+          <div class="section-heading small">
+            <p class="eyebrow">Education</p>
+            <h2>Engineering path</h2>
+          </div>
+          <div class="list-block">
+            <div>
+              <h3>ENSTA - Institut Polytechnique de Paris</h3>
+              <p>MSc in Embedded Systems Engineering, through apprenticeship</p>
+              <span>Sep 2024 to Sep 2027, expected</span>
+            </div>
+            <div>
+              <h3>University of Toulon - Institute of Technology</h3>
+              <p>BSc in Electrical Engineering and Industrial Computing</p>
+              <span>Sep 2022 to Jul 2024</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="section-heading small">
+            <p class="eyebrow">Additional Information</p>
+            <h2>Open source, leadership, languages</h2>
+          </div>
+          <div class="list-block">
+            <div>
+              <h3>Open Source</h3>
+              <p>Maintainer, Awesome French Robotics; C++ Contributor, PaxOS</p>
+            </div>
+            <div>
+              <h3>Leadership</h3>
+              <p>President, ENSTA Robotics Club</p>
+            </div>
+            <div>
+              <h3>Languages</h3>
+              <p>French (Native); English (TOEIC 875/990)</p>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="container section" id="resume">
+        <div class="section-heading">
+          <p class="eyebrow">Resume</p>
+          <h2>Resume snapshot</h2>
+        </div>
+        <div class="resume-layout">
+          <article class="card resume-summary-card">
+            <div class="resume-title-row">
+              <div>
+                <h3>Jocelyn Deleuil</h3>
+                <p class="resume-role">Robotics Software Engineer | Social Navigation | Autonomous Robots</p>
+              </div>
+              <span>Paris, France</span>
+            </div>
+            <div class="resume-section-mini">
+              <h4>Experience</h4>
+              <p><strong>Robotics Software Engineer, Enchanted Tools</strong> · Sep 2024 to Present</p>
+              <p>Social navigation, 360-degree perception, and Open-RMF fleet orchestration on physical Mirokaï robots.</p>
+            </div>
+            <div class="resume-section-mini">
+              <h4>Selected projects</h4>
+              <p><strong>VLM2Nav</strong> · Qwen3-VL, vLLM, ROS 2, Gazebo, Nav2/MPPI, HuNavSim</p>
+              <p><strong>PHARE</strong> · Wheeled-biped humanoid platform, ROS 2, embedded systems, CAN</p>
+              <p><strong>RoboCup MSL</strong> · Autonomous goalkeeper, world runner-up 2026</p>
+              <p><strong>FIPATECH</strong> · French Robotics Cup, 17th/89 Senior category</p>
+            </div>
+            <div class="resume-section-mini">
+              <h4>Core stack</h4>
+              <p>C++, Python, C, C#, ROS/ROS 2, Nav2, MPPI, Open-RMF, Isaac ROS, Gazebo, PyTorch, vLLM, Nvblox, OpenCV, TensorRT, NVIDIA Jetson, STM32, FreeRTOS, micro-ROS, CAN.</p>
+            </div>
+          </article>
+          <aside class="card resume-actions-card">
+            <h3>Latest resume content</h3>
+            <p>
+              The portfolio is built from the latest resume version, including the current Social Navigation positioning,
+              VLM2Nav work, RoboCup 2026 result, and TOEIC 875/990.
+            </p>
+            <div class="resume-actions">
+              <button class="button button-primary" type="button" onclick="window.print()">Print / Save PDF</button>
+              <a class="button button-secondary" href="mailto:jocelyn.deleuil@ensta.fr">Contact me</a>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="container section contact-section" id="contact">
+        <div class="card contact-card">
+          <p class="eyebrow">Contact</p>
+          <h2>Let's talk robotics.</h2>
+          <p>
+            If you're working on social navigation, embodied AI, robot autonomy, or advanced robotics systems,
+            I'd be happy to connect.
+          </p>
+          <div class="contact-links">
+            <a class="button button-primary" href="mailto:jocelyn.deleuil@ensta.fr">jocelyn.deleuil@ensta.fr</a>
+            <a class="button button-secondary" href="https://www.linkedin.com/in/jocelyn-deleuil/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="button button-secondary" href="https://github.com/lilblueyes" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© <span id="year"></span> Jocelyn Deleuil</p>
+        <p>Built as a fast static site for GitHub Pages.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
