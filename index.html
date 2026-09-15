@@ -3,9 +3,43 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jocelyn Deleuil</title>
-  <meta name="description" content="Jocelyn Deleuil - Robotics Software Engineer working on social navigation, autonomous robots, and ROS 2 systems.">
+  <title>Jocelyn Deleuil | Robotics Software Engineer</title>
+  <meta name="description" content="Jocelyn Deleuil is a Robotics Software Engineer at Enchanted Tools working on social navigation, autonomous robots, embodied AI, and ROS 2 systems.">
+  <link rel="canonical" href="https://www.jocelyn-deleuil.com/">
   <link rel="icon" type="image/png" href="/favicon.png">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Jocelyn Deleuil | Robotics Software Engineer">
+  <meta property="og:description" content="Robotics Software Engineer working on social navigation, autonomous robots, embodied AI, and ROS 2 systems.">
+  <meta property="og:url" content="https://www.jocelyn-deleuil.com/">
+  <meta property="og:image" content="https://www.jocelyn-deleuil.com/assets/img/jocelyn-profile.jpg">
+  <meta property="og:image:alt" content="Jocelyn Deleuil">
+  <meta property="profile:first_name" content="Jocelyn">
+  <meta property="profile:last_name" content="Deleuil">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Jocelyn Deleuil | Robotics Software Engineer">
+  <meta name="twitter:description" content="Robotics Software Engineer working on social navigation, autonomous robots, embodied AI, and ROS 2 systems.">
+  <meta name="twitter:image" content="https://www.jocelyn-deleuil.com/assets/img/jocelyn-profile.jpg">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jocelyn Deleuil",
+    "url": "https://www.jocelyn-deleuil.com/",
+    "image": "https://www.jocelyn-deleuil.com/assets/img/jocelyn-profile.jpg",
+    "jobTitle": "Robotics Software Engineer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Enchanted Tools"
+    },
+    "sameAs": [
+      "https://github.com/lilblueyes",
+      "https://www.linkedin.com/in/jocelyn-deleuil/"
+    ]
+  }
+  </script>
+
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -14,9 +48,9 @@
       <a class="name" href="#top">Jocelyn Deleuil</a>
       <nav aria-label="Primary">
         <a href="#about">About</a>
-        <a href="#experience">Experience</a>
+        <a href="#work">Work</a>
         <a href="#projects">Projects</a>
-        <a href="#education">Education</a>
+        <a href="#background">Background</a>
         <a href="/cv.html">CV</a>
       </nav>
     </div>
@@ -29,12 +63,12 @@
         <h1>Jocelyn Deleuil</h1>
         <p class="role">Robotics Software Engineer</p>
         <p class="affiliation">Enchanted Tools · ENSTA - Institut Polytechnique de Paris</p>
-        <p class="focus">Social Navigation · Autonomous Robots · ROS 2</p>
         <div class="links">
           <a href="mailto:jocelyn.deleuil@ensta.fr">Email</a>
           <a href="https://github.com/lilblueyes">GitHub</a>
           <a href="https://www.linkedin.com/in/jocelyn-deleuil/">LinkedIn</a>
           <a href="/cv.html">CV</a>
+          <a href="/cv.pdf">PDF</a>
         </div>
       </div>
     </section>
@@ -42,48 +76,48 @@
     <section id="about">
       <h2>About Me</h2>
       <p>
-        I am a Robotics Software Engineer at <strong>Enchanted Tools</strong> in Paris, working on navigation and autonomy for Mirokaï robots. My work focuses on social navigation, human-aware perception, multi-sensor obstacle representation, and fleet orchestration on physical robots.
+        I am a Robotics Software Engineer at <strong>Enchanted Tools</strong> in Paris, where I work on navigation and autonomy for Mirokaï robots. I am especially interested in how robots perceive people, understand the structure of a social scene, and move naturally and safely around humans.
       </p>
       <p>
-        I am also completing an MSc in Embedded Systems Engineering at <strong>ENSTA - Institut Polytechnique de Paris</strong>. My projects span vision-language models for social navigation, humanoid robotics, and autonomous competition robots.
+        I like working across the full robotics stack, from sensing and perception to navigation, embedded systems, integration, and validation on real robots. Most of my work is built around C++, Python, ROS 2, NVIDIA Jetson platforms, and the practical problems that appear when algorithms leave simulation and have to run reliably on hardware.
+      </p>
+      <p>
+        Alongside my work, I am completing an MSc in Embedded Systems Engineering at <strong>ENSTA - Institut Polytechnique de Paris</strong>. My current projects explore social navigation with vision-language models, humanoid robotics, and autonomous competition robots.
       </p>
     </section>
 
-    <section id="experience">
-      <h2>Experience</h2>
-      <div class="item">
-        <div class="item-head">
-          <div>
-            <h3>Robotics Software Engineer</h3>
-            <p class="sub">Enchanted Tools · Navigation R&amp;D · Paris, France</p>
-          </div>
-          <span class="date">Sep 2024 - Present</span>
-        </div>
-        <ul>
-          <li>Led integration of a complete social navigation stack on Mirokaï robots, combining 3D human perception, body-orientation estimation, social formation tracking, and motion-aware proxemic cost modeling.</li>
-          <li>Developed a 360-degree perception pipeline fusing nine ToF sensors with an RGB-D camera for robust near-field navigation.</li>
-          <li>Built and validated fleet orchestration across multiple physical Mirokaï robots using Open-RMF.</li>
-        </ul>
+    <section id="work">
+      <h2>What I Work On</h2>
+
+      <div class="prose-item">
+        <h3>Social navigation on Mirokaï</h3>
+        <p>
+          At Enchanted Tools, I work on the navigation R&amp;D stack used by Mirokaï robots. I have integrated a complete social-navigation pipeline combining 3D human perception, body-orientation estimation, social-formation tracking, and motion-aware proxemic cost modeling so that navigation decisions account for people rather than treating them as ordinary obstacles.
+        </p>
+        <p>
+          I also developed a 360-degree near-field perception pipeline that fuses nine time-of-flight sensors with an RGB-D camera for local costmaps and collision monitoring, and I built and validated Open-RMF fleet orchestration across multiple physical Mirokaï robots.
+        </p>
       </div>
-      <div class="item">
-        <div class="item-head">
-          <div>
-            <h3>Test and Integration Technician Intern</h3>
-            <p class="sub">Enchanted Tools · V&amp;V · Paris, France</p>
-          </div>
-          <span class="date">Apr 2024 - Jul 2024</span>
-        </div>
-        <ul>
-          <li>Designed and iterated a 3D-printed charging interface to support autonomous docking of Mirokaï robots.</li>
-          <li>Characterized seven pairs of robotic hands using endurance and precision tests, motion capture, and field testing.</li>
-        </ul>
+
+      <div class="prose-item">
+        <h3>Embodied AI for robot navigation</h3>
+        <p>
+          I am interested in using vision-language models as a high-level reasoning layer for navigation without putting them directly in the low-level control loop. My current VLM2Nav work studies how temporal visual observations can be converted into structured social decisions that are then executed by a conventional ROS 2 navigation stack.
+        </p>
+      </div>
+
+      <div class="prose-item">
+        <h3>Building complete robotic systems</h3>
+        <p>
+          Beyond navigation, I enjoy building systems end to end: embedded firmware, CAN communication, state estimation, perception, planning, control, simulation, testing, and bring-up. I tend to use projects and competitions as a way to validate ideas against real hardware rather than stopping at isolated algorithms.
+        </p>
       </div>
     </section>
 
     <section id="projects">
       <h2>Selected Projects</h2>
 
-      <div class="item">
+      <article class="item project-item">
         <div class="item-head">
           <div>
             <h3>VLM2Nav</h3>
@@ -91,11 +125,13 @@
           </div>
           <span class="date">2026 - Present</span>
         </div>
-        <p>ROS 2/Gazebo social-navigation testbed using Qwen3-VL via vLLM on Jetson AGX Orin, translating temporal RGB observations into structured social decisions executed through Nav2/MPPI.</p>
+        <p>
+          A ROS 2 and Gazebo testbed for studying social navigation with Qwen3-VL served through vLLM on Jetson AGX Orin. Temporal RGB observations are translated into structured social decisions, while Nav2 and MPPI remain responsible for motion generation and low-level control. HuNavSim provides reactive pedestrians and a reproducible nine-scenario benchmark.
+        </p>
         <p class="meta">ROS 2 · Nav2 · MPPI · Qwen3-VL · vLLM · Jetson AGX Orin · HuNavSim</p>
-      </div>
+      </article>
 
-      <div class="item">
+      <article class="item project-item">
         <div class="item-head">
           <div>
             <h3>PHARE</h3>
@@ -103,75 +139,52 @@
           </div>
           <span class="date">2026 - Present</span>
         </div>
-        <p>Co-Founder and Software &amp; Embedded Systems Lead of a modular wheeled-biped humanoid platform, covering ROS 2 software, embedded firmware, electronics, CAN architecture, state estimation, optimal control, and reinforcement learning.</p>
-      </div>
+        <p>
+          I co-founded PHARE and lead software and embedded systems for a modular wheeled-biped humanoid research platform at ENSTA. The project covers ROS 2, embedded firmware and electronics, CAN architecture, state estimation, optimal control, reinforcement learning, simulation, and the transition from digital models to a physical robot.
+        </p>
+      </article>
 
-      <div class="item">
+      <article class="item project-item">
         <div class="item-head">
           <div>
-            <h3>RoboCup MSL World Championship</h3>
+            <h3>RoboCup MSL</h3>
             <p class="sub">Robot Club Toulon · Goalkeeper Robot Lead</p>
           </div>
           <span class="date">2022 - Present</span>
         </div>
-        <p>Developed autonomous goalkeeper behaviors in C# using stereo-camera 3D ball reconstruction, ballistic trajectory prediction, reactive positioning, and shot interception with a 2-axis arm. World runner-up at RoboCup 2026.</p>
-      </div>
+        <p>
+          I develop autonomous goalkeeper behaviors in C#, including stereo-camera 3D ball reconstruction, ballistic trajectory prediction, reactive positioning, and shot interception with a two-axis arm. The team finished world runner-up at RoboCup 2026 in Incheon, South Korea.
+        </p>
+      </article>
 
-      <div class="item">
+      <article class="item project-item">
         <div class="item-head">
           <div>
-            <h3>French Robotics Cup · FIPATECH</h3>
-            <p class="sub">Founder · Team Leader &amp; Software Lead</p>
+            <h3>FIPATECH</h3>
+            <p class="sub">French Robotics Cup · Founder, Team Leader &amp; Software Lead</p>
           </div>
           <span class="date">2024 - 2026</span>
         </div>
-        <p>Engineered the ROS 2 stack for an autonomous holonomic robot with Nav2, MPPI, multi-sensor localization, and online task planning from simulation to competition. 17th/89 in the Senior category.</p>
-      </div>
+        <p>
+          I founded and led the team around an autonomous holonomic robot built with ROS 2, Nav2, MPPI, multi-sensor localization, and online task planning. We took the system from simulation through integration and competition, finishing 17th out of 89 teams in the Senior category in 2026.
+        </p>
+      </article>
     </section>
 
-    <section id="education">
-      <h2>Education</h2>
-      <div class="item compact">
-        <div class="item-head">
-          <div>
-            <h3>ENSTA - Institut Polytechnique de Paris</h3>
-            <p class="sub">MSc in Embedded Systems Engineering, through apprenticeship · Brest, France</p>
-          </div>
-          <span class="date">2024 - 2027</span>
-        </div>
-      </div>
-      <div class="item compact">
-        <div class="item-head">
-          <div>
-            <h3>University of Toulon - Institute of Technology</h3>
-            <p class="sub">BSc in Electrical Engineering and Industrial Computing · Toulon, France</p>
-          </div>
-          <span class="date">2022 - 2024</span>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <h2>Technical Skills</h2>
-      <div class="skills">
-        <p><strong>Programming:</strong> C++, Python, C, C#, MATLAB/Simulink, Bash</p>
-        <p><strong>Robotics:</strong> ROS/ROS 2, Nav2, MPPI, ros2_control, Open-RMF, Isaac ROS, Gazebo, TF2</p>
-        <p><strong>Perception &amp; ML:</strong> PyTorch, vLLM, Nvblox, OpenCV, TensorRT, YOLO</p>
-        <p><strong>Systems &amp; Embedded:</strong> Linux, Docker, NVIDIA Jetson, STM32, FreeRTOS, micro-ROS, CAN</p>
-      </div>
-    </section>
-
-    <section>
-      <h2>Additional Information</h2>
-      <p><strong>Open Source:</strong> Maintainer, Awesome French Robotics; C++ Contributor, PaxOS</p>
-      <p><strong>Leadership:</strong> President, ENSTA Robotics Club</p>
-      <p><strong>Languages:</strong> French (Native); English (TOEIC 875/990)</p>
+    <section id="background">
+      <h2>Background</h2>
+      <p>
+        Before joining the Navigation R&amp;D team at Enchanted Tools, I worked there as a Test and Integration Technician Intern in 2024. I designed and iterated a 3D-printed charging interface for autonomous docking and characterized seven pairs of robotic hands through endurance, precision, motion-capture, and field tests.
+      </p>
+      <p>
+        I study embedded systems engineering at ENSTA through apprenticeship after completing a BSc in Electrical Engineering and Industrial Computing at the University of Toulon. I am also President of the ENSTA Robotics Club, a maintainer of Awesome French Robotics, and a C++ contributor to PaxOS.
+      </p>
     </section>
   </main>
 
   <footer class="wrap footer">
     <span>© 2026 Jocelyn Deleuil</span>
-    <span>Paris, France</span>
+    <span><a href="/cv.html">Web CV</a> · <a href="/cv.pdf">PDF CV</a></span>
   </footer>
 </body>
 </html>
