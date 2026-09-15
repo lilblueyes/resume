@@ -1,12 +1,21 @@
-# Jocelyn Deleuil - Personal Website
+# jocelyn-deleuil.com
 
-Personal website for [Jocelyn Deleuil](https://www.jocelyn-deleuil.com/).
+Source for [jocelyn-deleuil.com](https://www.jocelyn-deleuil.com/), my personal robotics engineering portfolio and web CV.
 
-This site is adapted from [Keunhong Park's personal website template](https://github.com/keunhong/keunhong.github.io). The upstream README explicitly invites reuse of the template.
+The site is intentionally small and dependency-free: semantic HTML, one CSS file, static assets, and GitHub Pages.
 
-## License
+## Structure
 
-The template and this derivative are licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
+- `index.html` - personal portfolio and selected engineering work
+- `cv.html` - browser-friendly CV
+- `cv.pdf` - downloadable resume
+- `assets/` - site images
+- `styles.css` - shared site and print styles
 
-Original template: Copyright Keunhong Park and contributors.
-Adaptation: Copyright 2026 Jocelyn Deleuil.
+## Local preview
+
+```bash
+python3 -m http.server 8000
+```
+
+Then open `http://localhost:8000`.
