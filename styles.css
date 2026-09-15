@@ -64,6 +64,7 @@ main { padding: 58px 0 24px; }
 }
 
 .avatar {
+  content: url("assets/img/jocelyn-profile.svg");
   width: 180px;
   height: 180px;
   object-fit: cover;
